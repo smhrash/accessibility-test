@@ -1,0 +1,476 @@
+<html>
+<head>
+<title>TestNG:  Surefire test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Surefire test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Feb 24 08:16:21 CST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>33 seconds (33746 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.perficient.accessibilitytest.runnertest.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.perficient.accessibilitytest.runnertest.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Accessibility report", "Demo Testing"</td>
+<td><div><pre>java.lang.AssertionError: Found 7 accessibility violations:
+1) Elements must have sufficient color contrast: https://dequeuniversity.com/rules/axe/3.1/color-contrast?application=axeAPI
+  a) [&quot;#MainNavItem_0 &gt; h2 &gt; a&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 2.14 (foreground color: #ffffff, background color: #ff9900, font size: 13.5pt, font weight: normal). Expected contrast ratio of 4.5:1
+
+
+  b) [&quot;#ns_Z7_QB0003002GB790ASJIA2V910I0_\\:health_tab_link &gt; a&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.02 (foreground color: #3399ee, background color: #ffffff, font size: 10.5pt, font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  c) [&quot;#ns_Z7_QB0003002GB790ASJIA2V910I0_\\:dental_tab_link &gt; a&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 2.23 (foreground color: #3399ee, background color: #dddddd, font size: 10.5pt, font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  d) [&quot;#ns_Z7_QB0003002GB790ASJIA2V910I0_\\:health_tab_div &gt; .familymember[href=\&quot;#\&quot;]:nth-child(2) &gt; .access.no-access&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.99 (foreground color: #ff0000, background color: #ffffff, font size: 8.3pt, font weight: normal). Expected contrast ratio of 4.5:1
+
+
+  e) [&quot;#ns_Z7_QB0003002GB790ASJIA2V91026_healthTitle &gt; .title&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.02 (foreground color: #3399ee, background color: #ffffff, font size: 10.5pt, font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  f) [&quot;.health_claims &gt; .title&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.02 (foreground color: #3399ee, background color: #ffffff, font size: 10.5pt, font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  g) [&quot;#ns_Z7_QB0003002GB790ASJIA2V910S5_\\:claimSection &gt; .page-section &gt; .sm-datatable &gt; tbody &gt; tr:nth-child(2) &gt; td:nth-child(1) &gt; a &gt; .calbox &gt; .calbox-month&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.02 (foreground color: #ffffff, background color: #3399ee, font size: 8.3pt, font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  h) [&quot;#ns_Z7_QB0003002GB790ASJIA2V910S5_\\:claimSection &gt; .page-section &gt; .sm-datatable &gt; tbody &gt; tr:nth-child(2) &gt; td:nth-child(1) &gt; a &gt; .calbox &gt; .calbox-month &gt; span&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.02 (foreground color: #ffffff, background color: #3399ee, font size: 8.3pt, font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  i) [&quot;#ns_Z7_QB0003002GB790ASJIA2V910S5_\\:claimSection &gt; .page-section &gt; .sm-datatable &gt; tbody &gt; tr:nth-child(2) &gt; td:nth-child(1) &gt; a &gt; .calbox &gt; .calbox-day&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 2.72 (foreground color: #2288dd, background color: #ccddff, font size: 12.0pt, font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  j) [&quot;#ns_Z7_QB0003002GB790ASJIA2V910S5_\\:claimSection &gt; .page-section &gt; .sm-datatable &gt; tbody &gt; tr:nth-child(3) &gt; td:nth-child(1) &gt; a &gt; .calbox &gt; .calbox-month&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.02 (foreground color: #ffffff, background color: #3399ee, font size: 8.3pt, font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  k) [&quot;#ns_Z7_QB0003002GB790ASJIA2V910S5_\\:claimSection &gt; .page-section &gt; .sm-datatable &gt; tbody &gt; tr:nth-child(3) &gt; td:nth-child(1) &gt; a &gt; .calbox &gt; .calbox-month &gt; span&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.02 (foreground color: #ffffff, background color: #3399ee, font size: 8.3pt, font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  l) [&quot;#ns_Z7_QB0003002GB790ASJIA2V910S5_\\:claimSection &gt; .page-section &gt; .sm-datatable &gt; tbody &gt; tr:nth-child(3) &gt; td:nth-child(1) &gt; a &gt; .calbox &gt; .calbox-day&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 2.72 (foreground color: #2288dd, background color: #ccddff, font size: 12.0pt, font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  m) [&quot;#ns_Z7_QB0003002GB790ASJIA2V910S5_\\:claimSection &gt; .page-section &gt; .sm-datatable &gt; tbody &gt; tr:nth-child(4) &gt; td:nth-child(1) &gt; a &gt; .calbox &gt; .calbox-month&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.02 (foreground color: #ffffff, background color: #3399ee, font size: 8.3pt, font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  n) [&quot;#ns_Z7_QB0003002GB790ASJIA2V910S5_\\:claimSection &gt; .page-section &gt; .sm-datatable &gt; tbody &gt; tr:nth-child(4) &gt; td:nth-child(1) &gt; a &gt; .calbox &gt; .calbox-month &gt; span&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.02 (foreground color: #ffffff, background color: #3399ee, font size: 8.3pt, font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  o) [&quot;#ns_Z7_QB0003002GB790ASJIA2V910S5_\\:claimSection &gt; .page-section &gt; .sm-datatable &gt; tbody &gt; tr:nth-child(4) &gt; td:nth-child(1) &gt; a &gt; .calbox &gt; .calbox-day&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 2.72 (foreground color: #2288dd, background color: #ccddff, font size: 12.0pt, font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  p) [&quot;#ns_Z7_QB0003002GB790ASJIA2V91025_dentalTitle &gt; .title&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.02 (foreground color: #3399ee, background color: #ffffff, font size: 10.5pt, font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  q) [&quot;.dental_claims &gt; .title&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.02 (foreground color: #3399ee, background color: #ffffff, font size: 10.5pt, font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  r) [&quot;#ns_Z7_QB0003002GB790ASJIA2V910S7_\\:claimSection &gt; .page-section &gt; .sm-datatable &gt; tbody &gt; tr:nth-child(2) &gt; td:nth-child(1) &gt; a &gt; .calbox &gt; .calbox-month&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.02 (foreground color: #ffffff, background color: #3399ee, font size: 8.3pt, font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  s) [&quot;#ns_Z7_QB0003002GB790ASJIA2V910S7_\\:claimSection &gt; .page-section &gt; .sm-datatable &gt; tbody &gt; tr:nth-child(2) &gt; td:nth-child(1) &gt; a &gt; .calbox &gt; .calbox-month &gt; span&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.02 (foreground color: #ffffff, background color: #3399ee, font size: 8.3pt, font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  t) [&quot;#ns_Z7_QB0003002GB790ASJIA2V910S7_\\:claimSection &gt; .page-section &gt; .sm-datatable &gt; tbody &gt; tr:nth-child(2) &gt; td:nth-child(1) &gt; a &gt; .calbox &gt; .calbox-day&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 2.72 (foreground color: #2288dd, background color: #ccddff, font size: 12.0pt, font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  u) [&quot;#ns_Z7_QB0003002GB790ASJIA2V910S7_\\:claimSection &gt; .page-section &gt; .sm-datatable &gt; tbody &gt; tr:nth-child(3) &gt; td:nth-child(1) &gt; a &gt; .calbox &gt; .calbox-month&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.02 (foreground color: #ffffff, background color: #3399ee, font size: 8.3pt, font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  v) [&quot;#ns_Z7_QB0003002GB790ASJIA2V910S7_\\:claimSection &gt; .page-section &gt; .sm-datatable &gt; tbody &gt; tr:nth-child(3) &gt; td:nth-child(1) &gt; a &gt; .calbox &gt; .calbox-month &gt; span&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.02 (foreground color: #ffffff, background color: #3399ee, font size: 8.3pt, font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  w) [&quot;#ns_Z7_QB0003002GB790ASJIA2V910S7_\\:claimSection &gt; .page-section &gt; .sm-datatable &gt; tbody &gt; tr:nth-child(3) &gt; td:nth-child(1) &gt; a &gt; .calbox &gt; .calbox-day&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 2.72 (foreground color: #2288dd, background color: #ccddff, font size: 12.0pt, font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  x) [&quot;#ns_Z7_QB0003002GB790ASJIA2V910S7_\\:claimSection &gt; .page-section &gt; .sm-datatable &gt; tbody &gt; tr:nth-child(4) &gt; td:nth-child(1) &gt; a &gt; .calbox &gt; .calbox-month&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.02 (foreground color: #ffffff, background color: #3399ee, font size: 8.3pt, font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  y) [&quot;#ns_Z7_QB0003002GB790ASJIA2V910S7_\\:claimSection &gt; .page-section &gt; .sm-datatable &gt; tbody &gt; tr:nth-child(4) &gt; td:nth-child(1) &gt; a &gt; .calbox &gt; .calbox-month &gt; span&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.02 (foreground color: #ffffff, background color: #3399ee, font size: 8.3pt, font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  z) [&quot;#ns_Z7_QB0003002GB790ASJIA2V910S7_\\:claimSection &gt; .page-section &gt; .sm-datatable &gt; tbody &gt; tr:nth-child(4) &gt; td:nth-child(1) &gt; a &gt; .calbox &gt; .calbox-day&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 2.72 (foreground color: #2288dd, background color: #ccddff, font size: 12.0pt, font weight: bold). Expected contrast ratio of 4.5:1
+
+
+2) id attribute value must be unique: https://dequeuniversity.com/rules/axe/3.1/duplicate-id?application=axeAPI
+  a) [&quot;.id-Z7_7P9A1HC0OGMD40Q4OKLNDN00Q5 &gt; .ibmPortalControl.wpthemeControl.wpthemeHidden &gt; .wpthemeControlHeader[role=\&quot;banner\&quot;] &gt; .wpthemeInner &gt; .contextMenuInSkinIcon.wpthemeIcon.wpthemeMenuFocus &gt; .wpthemeMenu[data-positioning-handler=\&quot;horizontallyCenteredBelow\&quot;] &gt; .wpthemeAnchorSubmenu.wpthemeTemplateSubmenu &gt; .wpthemeMenuSubmenu.wpthemeMenuBorder &gt; .wpthemeMenuDropDown[role=\&quot;menu\&quot;]&quot;]
+    Fix any of the following:
+      Document has multiple static elements with the same id attribute
+
+
+3) Headings must not be empty: https://dequeuniversity.com/rules/axe/3.1/empty-heading?application=axeAPI
+  a) [&quot;#Poster-Secure-1 &gt; h2&quot;]
+    Fix any of the following:
+      Element does not have text that is visible to screen readers
+
+
+  b) [&quot;#Poster-Secure-2 &gt; h2&quot;]
+    Fix any of the following:
+      Element does not have text that is visible to screen readers
+
+
+  c) [&quot;#Poster-Secure-3 &gt; h2&quot;]
+    Fix any of the following:
+      Element does not have text that is visible to screen readers
+
+
+  d) [&quot;#Poster-Secure-4 &gt; h2&quot;]
+    Fix any of the following:
+      Element does not have text that is visible to screen readers
+
+
+4) Page must not have more than one banner landmark: https://dequeuniversity.com/rules/axe/3.1/landmark-no-duplicate-banner?application=axeAPI
+  a) [&quot;html&quot;]
+    Fix any of the following:
+      Document has more than one banner landmark
+
+
+5) Links must have discernible text: https://dequeuniversity.com/rules/axe/3.1/link-name?application=axeAPI
+  a) [&quot;#Poster-15dd8220-1c54-40ac-8a0b-e69e27ef10fd&quot;]
+    Fix all of the following:
+      Element is in tab order and does not have accessible text
+
+    Fix any of the following:
+      Element does not have text that is visible to screen readers
+      aria-label attribute does not exist or is empty
+      aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+      Element&apos;s default semantics were not overridden with role=&quot;presentation&quot;
+      Element&apos;s default semantics were not overridden with role=&quot;none&quot;
+
+
+6) &lt;ul&gt; and &lt;ol&gt; must only directly contain &lt;li&gt;, &lt;script&gt; or &lt;template&gt; elements: https://dequeuniversity.com/rules/axe/3.1/list?application=axeAPI
+  a) [&quot;nav &gt; ul&quot;]
+    Fix all of the following:
+      List element has direct children that are not allowed inside &lt;li&gt; elements
+
+
+7) All page content must be contained by landmarks: https://dequeuniversity.com/rules/axe/3.1/region?application=axeAPI
+  a) [&quot;html&quot;]
+    Fix any of the following:
+      Some page content is not contained by landmarks
+
+
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at com.perficient.accessibilitytest.AbstractServiceTest.accessibilityTest(AbstractServiceTest.java:47)
+	at com.perficient.accessibilitytest.stepdefinition.MyStepDefinitions.i_see_accessibility_report(MyStepDefinitions.java:38)
+	at ?.I see accessibility report(file:///C:/Users/Sarkerm.rashid/IdeaProjects/accessibility-test/src/test/resources/features/demo-accessibility-testing.feature:11)
+</pre></div><a href='#' onClick='toggleBox("stack-trace954742840", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace954742840'><pre>java.lang.AssertionError: Found 7 accessibility violations:
+1) Elements must have sufficient color contrast: https://dequeuniversity.com/rules/axe/3.1/color-contrast?application=axeAPI
+  a) [&quot;#MainNavItem_0 &gt; h2 &gt; a&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 2.14 (foreground color: #ffffff, background color: #ff9900, font size: 13.5pt, font weight: normal). Expected contrast ratio of 4.5:1
+
+
+  b) [&quot;#ns_Z7_QB0003002GB790ASJIA2V910I0_\\:health_tab_link &gt; a&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.02 (foreground color: #3399ee, background color: #ffffff, font size: 10.5pt, font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  c) [&quot;#ns_Z7_QB0003002GB790ASJIA2V910I0_\\:dental_tab_link &gt; a&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 2.23 (foreground color: #3399ee, background color: #dddddd, font size: 10.5pt, font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  d) [&quot;#ns_Z7_QB0003002GB790ASJIA2V910I0_\\:health_tab_div &gt; .familymember[href=\&quot;#\&quot;]:nth-child(2) &gt; .access.no-access&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.99 (foreground color: #ff0000, background color: #ffffff, font size: 8.3pt, font weight: normal). Expected contrast ratio of 4.5:1
+
+
+  e) [&quot;#ns_Z7_QB0003002GB790ASJIA2V91026_healthTitle &gt; .title&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.02 (foreground color: #3399ee, background color: #ffffff, font size: 10.5pt, font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  f) [&quot;.health_claims &gt; .title&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.02 (foreground color: #3399ee, background color: #ffffff, font size: 10.5pt, font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  g) [&quot;#ns_Z7_QB0003002GB790ASJIA2V910S5_\\:claimSection &gt; .page-section &gt; .sm-datatable &gt; tbody &gt; tr:nth-child(2) &gt; td:nth-child(1) &gt; a &gt; .calbox &gt; .calbox-month&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.02 (foreground color: #ffffff, background color: #3399ee, font size: 8.3pt, font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  h) [&quot;#ns_Z7_QB0003002GB790ASJIA2V910S5_\\:claimSection &gt; .page-section &gt; .sm-datatable &gt; tbody &gt; tr:nth-child(2) &gt; td:nth-child(1) &gt; a &gt; .calbox &gt; .calbox-month &gt; span&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.02 (foreground color: #ffffff, background color: #3399ee, font size: 8.3pt, font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  i) [&quot;#ns_Z7_QB0003002GB790ASJIA2V910S5_\\:claimSection &gt; .page-section &gt; .sm-datatable &gt; tbody &gt; tr:nth-child(2) &gt; td:nth-child(1) &gt; a &gt; .calbox &gt; .calbox-day&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 2.72 (foreground color: #2288dd, background color: #ccddff, font size: 12.0pt, font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  j) [&quot;#ns_Z7_QB0003002GB790ASJIA2V910S5_\\:claimSection &gt; .page-section &gt; .sm-datatable &gt; tbody &gt; tr:nth-child(3) &gt; td:nth-child(1) &gt; a &gt; .calbox &gt; .calbox-month&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.02 (foreground color: #ffffff, background color: #3399ee, font size: 8.3pt, font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  k) [&quot;#ns_Z7_QB0003002GB790ASJIA2V910S5_\\:claimSection &gt; .page-section &gt; .sm-datatable &gt; tbody &gt; tr:nth-child(3) &gt; td:nth-child(1) &gt; a &gt; .calbox &gt; .calbox-month &gt; span&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.02 (foreground color: #ffffff, background color: #3399ee, font size: 8.3pt, font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  l) [&quot;#ns_Z7_QB0003002GB790ASJIA2V910S5_\\:claimSection &gt; .page-section &gt; .sm-datatable &gt; tbody &gt; tr:nth-child(3) &gt; td:nth-child(1) &gt; a &gt; .calbox &gt; .calbox-day&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 2.72 (foreground color: #2288dd, background color: #ccddff, font size: 12.0pt, font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  m) [&quot;#ns_Z7_QB0003002GB790ASJIA2V910S5_\\:claimSection &gt; .page-section &gt; .sm-datatable &gt; tbody &gt; tr:nth-child(4) &gt; td:nth-child(1) &gt; a &gt; .calbox &gt; .calbox-month&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.02 (foreground color: #ffffff, background color: #3399ee, font size: 8.3pt, font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  n) [&quot;#ns_Z7_QB0003002GB790ASJIA2V910S5_\\:claimSection &gt; .page-section &gt; .sm-datatable &gt; tbody &gt; tr:nth-child(4) &gt; td:nth-child(1) &gt; a &gt; .calbox &gt; .calbox-month &gt; span&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.02 (foreground color: #ffffff, background color: #3399ee, font size: 8.3pt, font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  o) [&quot;#ns_Z7_QB0003002GB790ASJIA2V910S5_\\:claimSection &gt; .page-section &gt; .sm-datatable &gt; tbody &gt; tr:nth-child(4) &gt; td:nth-child(1) &gt; a &gt; .calbox &gt; .calbox-day&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 2.72 (foreground color: #2288dd, background color: #ccddff, font size: 12.0pt, font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  p) [&quot;#ns_Z7_QB0003002GB790ASJIA2V91025_dentalTitle &gt; .title&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.02 (foreground color: #3399ee, background color: #ffffff, font size: 10.5pt, font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  q) [&quot;.dental_claims &gt; .title&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.02 (foreground color: #3399ee, background color: #ffffff, font size: 10.5pt, font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  r) [&quot;#ns_Z7_QB0003002GB790ASJIA2V910S7_\\:claimSection &gt; .page-section &gt; .sm-datatable &gt; tbody &gt; tr:nth-child(2) &gt; td:nth-child(1) &gt; a &gt; .calbox &gt; .calbox-month&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.02 (foreground color: #ffffff, background color: #3399ee, font size: 8.3pt, font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  s) [&quot;#ns_Z7_QB0003002GB790ASJIA2V910S7_\\:claimSection &gt; .page-section &gt; .sm-datatable &gt; tbody &gt; tr:nth-child(2) &gt; td:nth-child(1) &gt; a &gt; .calbox &gt; .calbox-month &gt; span&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.02 (foreground color: #ffffff, background color: #3399ee, font size: 8.3pt, font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  t) [&quot;#ns_Z7_QB0003002GB790ASJIA2V910S7_\\:claimSection &gt; .page-section &gt; .sm-datatable &gt; tbody &gt; tr:nth-child(2) &gt; td:nth-child(1) &gt; a &gt; .calbox &gt; .calbox-day&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 2.72 (foreground color: #2288dd, background color: #ccddff, font size: 12.0pt, font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  u) [&quot;#ns_Z7_QB0003002GB790ASJIA2V910S7_\\:claimSection &gt; .page-section &gt; .sm-datatable &gt; tbody &gt; tr:nth-child(3) &gt; td:nth-child(1) &gt; a &gt; .calbox &gt; .calbox-month&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.02 (foreground color: #ffffff, background color: #3399ee, font size: 8.3pt, font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  v) [&quot;#ns_Z7_QB0003002GB790ASJIA2V910S7_\\:claimSection &gt; .page-section &gt; .sm-datatable &gt; tbody &gt; tr:nth-child(3) &gt; td:nth-child(1) &gt; a &gt; .calbox &gt; .calbox-month &gt; span&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.02 (foreground color: #ffffff, background color: #3399ee, font size: 8.3pt, font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  w) [&quot;#ns_Z7_QB0003002GB790ASJIA2V910S7_\\:claimSection &gt; .page-section &gt; .sm-datatable &gt; tbody &gt; tr:nth-child(3) &gt; td:nth-child(1) &gt; a &gt; .calbox &gt; .calbox-day&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 2.72 (foreground color: #2288dd, background color: #ccddff, font size: 12.0pt, font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  x) [&quot;#ns_Z7_QB0003002GB790ASJIA2V910S7_\\:claimSection &gt; .page-section &gt; .sm-datatable &gt; tbody &gt; tr:nth-child(4) &gt; td:nth-child(1) &gt; a &gt; .calbox &gt; .calbox-month&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.02 (foreground color: #ffffff, background color: #3399ee, font size: 8.3pt, font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  y) [&quot;#ns_Z7_QB0003002GB790ASJIA2V910S7_\\:claimSection &gt; .page-section &gt; .sm-datatable &gt; tbody &gt; tr:nth-child(4) &gt; td:nth-child(1) &gt; a &gt; .calbox &gt; .calbox-month &gt; span&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.02 (foreground color: #ffffff, background color: #3399ee, font size: 8.3pt, font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  z) [&quot;#ns_Z7_QB0003002GB790ASJIA2V910S7_\\:claimSection &gt; .page-section &gt; .sm-datatable &gt; tbody &gt; tr:nth-child(4) &gt; td:nth-child(1) &gt; a &gt; .calbox &gt; .calbox-day&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 2.72 (foreground color: #2288dd, background color: #ccddff, font size: 12.0pt, font weight: bold). Expected contrast ratio of 4.5:1
+
+
+2) id attribute value must be unique: https://dequeuniversity.com/rules/axe/3.1/duplicate-id?application=axeAPI
+  a) [&quot;.id-Z7_7P9A1HC0OGMD40Q4OKLNDN00Q5 &gt; .ibmPortalControl.wpthemeControl.wpthemeHidden &gt; .wpthemeControlHeader[role=\&quot;banner\&quot;] &gt; .wpthemeInner &gt; .contextMenuInSkinIcon.wpthemeIcon.wpthemeMenuFocus &gt; .wpthemeMenu[data-positioning-handler=\&quot;horizontallyCenteredBelow\&quot;] &gt; .wpthemeAnchorSubmenu.wpthemeTemplateSubmenu &gt; .wpthemeMenuSubmenu.wpthemeMenuBorder &gt; .wpthemeMenuDropDown[role=\&quot;menu\&quot;]&quot;]
+    Fix any of the following:
+      Document has multiple static elements with the same id attribute
+
+
+3) Headings must not be empty: https://dequeuniversity.com/rules/axe/3.1/empty-heading?application=axeAPI
+  a) [&quot;#Poster-Secure-1 &gt; h2&quot;]
+    Fix any of the following:
+      Element does not have text that is visible to screen readers
+
+
+  b) [&quot;#Poster-Secure-2 &gt; h2&quot;]
+    Fix any of the following:
+      Element does not have text that is visible to screen readers
+
+
+  c) [&quot;#Poster-Secure-3 &gt; h2&quot;]
+    Fix any of the following:
+      Element does not have text that is visible to screen readers
+
+
+  d) [&quot;#Poster-Secure-4 &gt; h2&quot;]
+    Fix any of the following:
+      Element does not have text that is visible to screen readers
+
+
+4) Page must not have more than one banner landmark: https://dequeuniversity.com/rules/axe/3.1/landmark-no-duplicate-banner?application=axeAPI
+  a) [&quot;html&quot;]
+    Fix any of the following:
+      Document has more than one banner landmark
+
+
+5) Links must have discernible text: https://dequeuniversity.com/rules/axe/3.1/link-name?application=axeAPI
+  a) [&quot;#Poster-15dd8220-1c54-40ac-8a0b-e69e27ef10fd&quot;]
+    Fix all of the following:
+      Element is in tab order and does not have accessible text
+
+    Fix any of the following:
+      Element does not have text that is visible to screen readers
+      aria-label attribute does not exist or is empty
+      aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+      Element&apos;s default semantics were not overridden with role=&quot;presentation&quot;
+      Element&apos;s default semantics were not overridden with role=&quot;none&quot;
+
+
+6) &lt;ul&gt; and &lt;ol&gt; must only directly contain &lt;li&gt;, &lt;script&gt; or &lt;template&gt; elements: https://dequeuniversity.com/rules/axe/3.1/list?application=axeAPI
+  a) [&quot;nav &gt; ul&quot;]
+    Fix all of the following:
+      List element has direct children that are not allowed inside &lt;li&gt; elements
+
+
+7) All page content must be contained by landmarks: https://dequeuniversity.com/rules/axe/3.1/region?application=axeAPI
+  a) [&quot;html&quot;]
+    Fix any of the following:
+      Some page content is not contained by landmarks
+
+
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at com.perficient.accessibilitytest.AbstractServiceTest.accessibilityTest(AbstractServiceTest.java:47)
+	at com.perficient.accessibilitytest.stepdefinition.MyStepDefinitions.i_see_accessibility_report(MyStepDefinitions.java:38)
+	at ?.I see accessibility report(file:///C:/Users/Sarkerm.rashid/IdeaProjects/accessibility-test/src/test/resources/features/demo-accessibility-testing.feature:11)
+</pre></div></td>
+<td>33</td>
+<td>com.perficient.accessibilitytest.runnertest.RunnerTest@7393222f</td></tr>
+</table><p>
+</body>
+</html>

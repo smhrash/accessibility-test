@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Surefire_suite" class="navigator-link">
+              <span class="suite-name border-failed">Surefire suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Surefire_suite" class="navigator-link ">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Surefire_suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Surefire_suite" class="navigator-link ">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Surefire_suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Surefire_suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Surefire_suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Surefire_suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">1 method, 1 failed,   </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Surefire_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.perficient.accessibilitytest.runnertest.RunnerTest" class="method navigator-link" hash-for-method="runScenario(&quot;Accessibility report&quot;, &quot;Demo Testing&quot;)">runScenario("Accessibility report", "Demo Testing")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Surefire_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.perficient.accessibilitytest.runnertest.RunnerTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Accessibility report&quot;, &quot;Demo Testing&quot;)">
+                  </a> <!-- runScenario("Accessibility report", "Demo Testing") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Accessibility report","Demo Testing")</span>
+                  <div class="stack-trace">java.lang.AssertionError: Found 7 accessibility violations:
+1) Elements must have sufficient color contrast: https://dequeuniversity.com/rules/axe/3.1/color-contrast?application=axeAPI
+  a) [&quot;#MainNavItem_0 &gt; h2 &gt; a&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 2.14 (foreground color: #ffffff, background color: #ff9900, font size: 13.5pt, font weight: normal). Expected contrast ratio of 4.5:1
+
+
+  b) [&quot;#ns_Z7_QB0003002GB790ASJIA2V910I0_\\:health_tab_link &gt; a&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.02 (foreground color: #3399ee, background color: #ffffff, font size: 10.5pt, font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  c) [&quot;#ns_Z7_QB0003002GB790ASJIA2V910I0_\\:dental_tab_link &gt; a&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 2.23 (foreground color: #3399ee, background color: #dddddd, font size: 10.5pt, font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  d) [&quot;#ns_Z7_QB0003002GB790ASJIA2V910I0_\\:health_tab_div &gt; .familymember[href=\&quot;#\&quot;]:nth-child(2) &gt; .access.no-access&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.99 (foreground color: #ff0000, background color: #ffffff, font size: 8.3pt, font weight: normal). Expected contrast ratio of 4.5:1
+
+
+  e) [&quot;#ns_Z7_QB0003002GB790ASJIA2V91026_healthTitle &gt; .title&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.02 (foreground color: #3399ee, background color: #ffffff, font size: 10.5pt, font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  f) [&quot;.health_claims &gt; .title&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.02 (foreground color: #3399ee, background color: #ffffff, font size: 10.5pt, font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  g) [&quot;#ns_Z7_QB0003002GB790ASJIA2V910S5_\\:claimSection &gt; .page-section &gt; .sm-datatable &gt; tbody &gt; tr:nth-child(2) &gt; td:nth-child(1) &gt; a &gt; .calbox &gt; .calbox-month&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.02 (foreground color: #ffffff, background color: #3399ee, font size: 8.3pt, font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  h) [&quot;#ns_Z7_QB0003002GB790ASJIA2V910S5_\\:claimSection &gt; .page-section &gt; .sm-datatable &gt; tbody &gt; tr:nth-child(2) &gt; td:nth-child(1) &gt; a &gt; .calbox &gt; .calbox-month &gt; span&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.02 (foreground color: #ffffff, background color: #3399ee, font size: 8.3pt, font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  i) [&quot;#ns_Z7_QB0003002GB790ASJIA2V910S5_\\:claimSection &gt; .page-section &gt; .sm-datatable &gt; tbody &gt; tr:nth-child(2) &gt; td:nth-child(1) &gt; a &gt; .calbox &gt; .calbox-day&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 2.72 (foreground color: #2288dd, background color: #ccddff, font size: 12.0pt, font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  j) [&quot;#ns_Z7_QB0003002GB790ASJIA2V910S5_\\:claimSection &gt; .page-section &gt; .sm-datatable &gt; tbody &gt; tr:nth-child(3) &gt; td:nth-child(1) &gt; a &gt; .calbox &gt; .calbox-month&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.02 (foreground color: #ffffff, background color: #3399ee, font size: 8.3pt, font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  k) [&quot;#ns_Z7_QB0003002GB790ASJIA2V910S5_\\:claimSection &gt; .page-section &gt; .sm-datatable &gt; tbody &gt; tr:nth-child(3) &gt; td:nth-child(1) &gt; a &gt; .calbox &gt; .calbox-month &gt; span&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.02 (foreground color: #ffffff, background color: #3399ee, font size: 8.3pt, font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  l) [&quot;#ns_Z7_QB0003002GB790ASJIA2V910S5_\\:claimSection &gt; .page-section &gt; .sm-datatable &gt; tbody &gt; tr:nth-child(3) &gt; td:nth-child(1) &gt; a &gt; .calbox &gt; .calbox-day&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 2.72 (foreground color: #2288dd, background color: #ccddff, font size: 12.0pt, font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  m) [&quot;#ns_Z7_QB0003002GB790ASJIA2V910S5_\\:claimSection &gt; .page-section &gt; .sm-datatable &gt; tbody &gt; tr:nth-child(4) &gt; td:nth-child(1) &gt; a &gt; .calbox &gt; .calbox-month&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.02 (foreground color: #ffffff, background color: #3399ee, font size: 8.3pt, font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  n) [&quot;#ns_Z7_QB0003002GB790ASJIA2V910S5_\\:claimSection &gt; .page-section &gt; .sm-datatable &gt; tbody &gt; tr:nth-child(4) &gt; td:nth-child(1) &gt; a &gt; .calbox &gt; .calbox-month &gt; span&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.02 (foreground color: #ffffff, background color: #3399ee, font size: 8.3pt, font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  o) [&quot;#ns_Z7_QB0003002GB790ASJIA2V910S5_\\:claimSection &gt; .page-section &gt; .sm-datatable &gt; tbody &gt; tr:nth-child(4) &gt; td:nth-child(1) &gt; a &gt; .calbox &gt; .calbox-day&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 2.72 (foreground color: #2288dd, background color: #ccddff, font size: 12.0pt, font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  p) [&quot;#ns_Z7_QB0003002GB790ASJIA2V91025_dentalTitle &gt; .title&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.02 (foreground color: #3399ee, background color: #ffffff, font size: 10.5pt, font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  q) [&quot;.dental_claims &gt; .title&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.02 (foreground color: #3399ee, background color: #ffffff, font size: 10.5pt, font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  r) [&quot;#ns_Z7_QB0003002GB790ASJIA2V910S7_\\:claimSection &gt; .page-section &gt; .sm-datatable &gt; tbody &gt; tr:nth-child(2) &gt; td:nth-child(1) &gt; a &gt; .calbox &gt; .calbox-month&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.02 (foreground color: #ffffff, background color: #3399ee, font size: 8.3pt, font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  s) [&quot;#ns_Z7_QB0003002GB790ASJIA2V910S7_\\:claimSection &gt; .page-section &gt; .sm-datatable &gt; tbody &gt; tr:nth-child(2) &gt; td:nth-child(1) &gt; a &gt; .calbox &gt; .calbox-month &gt; span&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.02 (foreground color: #ffffff, background color: #3399ee, font size: 8.3pt, font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  t) [&quot;#ns_Z7_QB0003002GB790ASJIA2V910S7_\\:claimSection &gt; .page-section &gt; .sm-datatable &gt; tbody &gt; tr:nth-child(2) &gt; td:nth-child(1) &gt; a &gt; .calbox &gt; .calbox-day&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 2.72 (foreground color: #2288dd, background color: #ccddff, font size: 12.0pt, font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  u) [&quot;#ns_Z7_QB0003002GB790ASJIA2V910S7_\\:claimSection &gt; .page-section &gt; .sm-datatable &gt; tbody &gt; tr:nth-child(3) &gt; td:nth-child(1) &gt; a &gt; .calbox &gt; .calbox-month&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.02 (foreground color: #ffffff, background color: #3399ee, font size: 8.3pt, font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  v) [&quot;#ns_Z7_QB0003002GB790ASJIA2V910S7_\\:claimSection &gt; .page-section &gt; .sm-datatable &gt; tbody &gt; tr:nth-child(3) &gt; td:nth-child(1) &gt; a &gt; .calbox &gt; .calbox-month &gt; span&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.02 (foreground color: #ffffff, background color: #3399ee, font size: 8.3pt, font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  w) [&quot;#ns_Z7_QB0003002GB790ASJIA2V910S7_\\:claimSection &gt; .page-section &gt; .sm-datatable &gt; tbody &gt; tr:nth-child(3) &gt; td:nth-child(1) &gt; a &gt; .calbox &gt; .calbox-day&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 2.72 (foreground color: #2288dd, background color: #ccddff, font size: 12.0pt, font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  x) [&quot;#ns_Z7_QB0003002GB790ASJIA2V910S7_\\:claimSection &gt; .page-section &gt; .sm-datatable &gt; tbody &gt; tr:nth-child(4) &gt; td:nth-child(1) &gt; a &gt; .calbox &gt; .calbox-month&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.02 (foreground color: #ffffff, background color: #3399ee, font size: 8.3pt, font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  y) [&quot;#ns_Z7_QB0003002GB790ASJIA2V910S7_\\:claimSection &gt; .page-section &gt; .sm-datatable &gt; tbody &gt; tr:nth-child(4) &gt; td:nth-child(1) &gt; a &gt; .calbox &gt; .calbox-month &gt; span&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.02 (foreground color: #ffffff, background color: #3399ee, font size: 8.3pt, font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  z) [&quot;#ns_Z7_QB0003002GB790ASJIA2V910S7_\\:claimSection &gt; .page-section &gt; .sm-datatable &gt; tbody &gt; tr:nth-child(4) &gt; td:nth-child(1) &gt; a &gt; .calbox &gt; .calbox-day&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 2.72 (foreground color: #2288dd, background color: #ccddff, font size: 12.0pt, font weight: bold). Expected contrast ratio of 4.5:1
+
+
+2) id attribute value must be unique: https://dequeuniversity.com/rules/axe/3.1/duplicate-id?application=axeAPI
+  a) [&quot;.id-Z7_7P9A1HC0OGMD40Q4OKLNDN00Q5 &gt; .ibmPortalControl.wpthemeControl.wpthemeHidden &gt; .wpthemeControlHeader[role=\&quot;banner\&quot;] &gt; .wpthemeInner &gt; .contextMenuInSkinIcon.wpthemeIcon.wpthemeMenuFocus &gt; .wpthemeMenu[data-positioning-handler=\&quot;horizontallyCenteredBelow\&quot;] &gt; .wpthemeAnchorSubmenu.wpthemeTemplateSubmenu &gt; .wpthemeMenuSubmenu.wpthemeMenuBorder &gt; .wpthemeMenuDropDown[role=\&quot;menu\&quot;]&quot;]
+    Fix any of the following:
+      Document has multiple static elements with the same id attribute
+
+
+3) Headings must not be empty: https://dequeuniversity.com/rules/axe/3.1/empty-heading?application=axeAPI
+  a) [&quot;#Poster-Secure-1 &gt; h2&quot;]
+    Fix any of the following:
+      Element does not have text that is visible to screen readers
+
+
+  b) [&quot;#Poster-Secure-2 &gt; h2&quot;]
+    Fix any of the following:
+      Element does not have text that is visible to screen readers
+
+
+  c) [&quot;#Poster-Secure-3 &gt; h2&quot;]
+    Fix any of the following:
+      Element does not have text that is visible to screen readers
+
+
+  d) [&quot;#Poster-Secure-4 &gt; h2&quot;]
+    Fix any of the following:
+      Element does not have text that is visible to screen readers
+
+
+4) Page must not have more than one banner landmark: https://dequeuniversity.com/rules/axe/3.1/landmark-no-duplicate-banner?application=axeAPI
+  a) [&quot;html&quot;]
+    Fix any of the following:
+      Document has more than one banner landmark
+
+
+5) Links must have discernible text: https://dequeuniversity.com/rules/axe/3.1/link-name?application=axeAPI
+  a) [&quot;#Poster-15dd8220-1c54-40ac-8a0b-e69e27ef10fd&quot;]
+    Fix all of the following:
+      Element is in tab order and does not have accessible text
+
+    Fix any of the following:
+      Element does not have text that is visible to screen readers
+      aria-label attribute does not exist or is empty
+      aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+      Element&apos;s default semantics were not overridden with role=&quot;presentation&quot;
+      Element&apos;s default semantics were not overridden with role=&quot;none&quot;
+
+
+6) &lt;ul&gt; and &lt;ol&gt; must only directly contain &lt;li&gt;, &lt;script&gt; or &lt;template&gt; elements: https://dequeuniversity.com/rules/axe/3.1/list?application=axeAPI
+  a) [&quot;nav &gt; ul&quot;]
+    Fix all of the following:
+      List element has direct children that are not allowed inside &lt;li&gt; elements
+
+
+7) All page content must be contained by landmarks: https://dequeuniversity.com/rules/axe/3.1/region?application=axeAPI
+  a) [&quot;html&quot;]
+    Fix any of the following:
+      Some page content is not contained by landmarks
+
+
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at com.perficient.accessibilitytest.AbstractServiceTest.accessibilityTest(AbstractServiceTest.java:47)
+	at com.perficient.accessibilitytest.stepdefinition.MyStepDefinitions.i_see_accessibility_report(MyStepDefinitions.java:38)
+	at ✽.I see accessibility report(file:///C:/Users/Sarkerm.rashid/IdeaProjects/accessibility-test/src/test/resources/features/demo-accessibility-testing.feature:11)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
+        </div> <!-- panel Surefire_suite -->
+        <div panel-name="test-xml-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;1&quot; name=&quot;Surefire suite&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;Surefire test&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.perficient.accessibilitytest.AbstractServiceTest&quot;/&gt;
+      &lt;class name=&quot;com.perficient.accessibilitytest.runnertest.RunnerTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Surefire test --&gt;
+&lt;/suite&gt; &lt;!-- Surefire suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Surefire test (2 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">cucumber</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">runScenario</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Surefire_suite');
+function tableData_Surefire_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(1);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'runScenario')
+data.setCell(0, 2, 'com.perficient.accessibilitytest.runnertest.RunnerTest')
+data.setCell(0, 3, 33086);
+window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 33 seconds</span>
+              <div id="times-div-Surefire_suite">
+              </div> <!-- times-div-Surefire_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.perficient.accessibilitytest.runnertest.RunnerTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass(org.testng.TestRunner@d84b3a2)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Accessibility report", "Demo Testing")</span>
+                <span class="method-start">235 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">33432 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
