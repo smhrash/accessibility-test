@@ -2,26 +2,26 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-24T08:16:21 CST" name="Surefire suite" finished-at="2023-02-24T08:16:55 CST" duration-ms="33746">
+  <suite started-at="2023-02-24T16:24:41 CST" name="Surefire suite" finished-at="2023-02-24T16:25:09 CST" duration-ms="28311">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.perficient.accessibilitytest.runnertest.RunnerTest@7393222f]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2023-02-24T08:16:21 CST" name="Surefire test" finished-at="2023-02-24T08:16:55 CST" duration-ms="33746">
+    <test started-at="2023-02-24T16:24:41 CST" name="Surefire test" finished-at="2023-02-24T16:25:09 CST" duration-ms="28311">
       <class name="com.perficient.accessibilitytest.runnertest.RunnerTest">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.perficient.accessibilitytest.runnertest.RunnerTest@7393222f]" started-at="2023-02-24T08:16:21 CST" name="setUpClass" finished-at="2023-02-24T08:16:22 CST" duration-ms="222" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.perficient.accessibilitytest.runnertest.RunnerTest@7393222f]" started-at="2023-02-24T16:24:41 CST" name="setUpClass" finished-at="2023-02-24T16:24:41 CST" duration-ms="239" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@d84b3a2]]>
+                <![CDATA[org.testng.TestRunner@175c5c3a]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.perficient.accessibilitytest.runnertest.RunnerTest@7393222f]" started-at="2023-02-24T08:16:22 CST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-24T08:16:55 CST" duration-ms="33086" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.perficient.accessibilitytest.runnertest.RunnerTest@7393222f]" started-at="2023-02-24T16:24:41 CST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-24T16:25:09 CST" duration-ms="27606" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -113,57 +113,52 @@
       Element has insufficient color contrast of 2.72 (foreground color: #2288dd, background color: #ccddff, font size: 12.0pt, font weight: bold). Expected contrast ratio of 4.5:1
 
 
-  p) ["#ns_Z7_QB0003002GB790ASJIA2V91025_dentalTitle > .title"]
+  p) [".dental_claims > .title"]
     Fix any of the following:
       Element has insufficient color contrast of 3.02 (foreground color: #3399ee, background color: #ffffff, font size: 10.5pt, font weight: bold). Expected contrast ratio of 4.5:1
 
 
-  q) [".dental_claims > .title"]
-    Fix any of the following:
-      Element has insufficient color contrast of 3.02 (foreground color: #3399ee, background color: #ffffff, font size: 10.5pt, font weight: bold). Expected contrast ratio of 4.5:1
-
-
-  r) ["#ns_Z7_QB0003002GB790ASJIA2V910S7_\\:claimSection > .page-section > .sm-datatable > tbody > tr:nth-child(2) > td:nth-child(1) > a > .calbox > .calbox-month"]
+  q) ["#ns_Z7_QB0003002GB790ASJIA2V910S7_\\:claimSection > .page-section > .sm-datatable > tbody > tr:nth-child(2) > td:nth-child(1) > a > .calbox > .calbox-month"]
     Fix any of the following:
       Element has insufficient color contrast of 3.02 (foreground color: #ffffff, background color: #3399ee, font size: 8.3pt, font weight: bold). Expected contrast ratio of 4.5:1
 
 
-  s) ["#ns_Z7_QB0003002GB790ASJIA2V910S7_\\:claimSection > .page-section > .sm-datatable > tbody > tr:nth-child(2) > td:nth-child(1) > a > .calbox > .calbox-month > span"]
+  r) ["#ns_Z7_QB0003002GB790ASJIA2V910S7_\\:claimSection > .page-section > .sm-datatable > tbody > tr:nth-child(2) > td:nth-child(1) > a > .calbox > .calbox-month > span"]
     Fix any of the following:
       Element has insufficient color contrast of 3.02 (foreground color: #ffffff, background color: #3399ee, font size: 8.3pt, font weight: bold). Expected contrast ratio of 4.5:1
 
 
-  t) ["#ns_Z7_QB0003002GB790ASJIA2V910S7_\\:claimSection > .page-section > .sm-datatable > tbody > tr:nth-child(2) > td:nth-child(1) > a > .calbox > .calbox-day"]
+  s) ["#ns_Z7_QB0003002GB790ASJIA2V910S7_\\:claimSection > .page-section > .sm-datatable > tbody > tr:nth-child(2) > td:nth-child(1) > a > .calbox > .calbox-day"]
     Fix any of the following:
       Element has insufficient color contrast of 2.72 (foreground color: #2288dd, background color: #ccddff, font size: 12.0pt, font weight: bold). Expected contrast ratio of 4.5:1
 
 
-  u) ["#ns_Z7_QB0003002GB790ASJIA2V910S7_\\:claimSection > .page-section > .sm-datatable > tbody > tr:nth-child(3) > td:nth-child(1) > a > .calbox > .calbox-month"]
+  t) ["#ns_Z7_QB0003002GB790ASJIA2V910S7_\\:claimSection > .page-section > .sm-datatable > tbody > tr:nth-child(3) > td:nth-child(1) > a > .calbox > .calbox-month"]
     Fix any of the following:
       Element has insufficient color contrast of 3.02 (foreground color: #ffffff, background color: #3399ee, font size: 8.3pt, font weight: bold). Expected contrast ratio of 4.5:1
 
 
-  v) ["#ns_Z7_QB0003002GB790ASJIA2V910S7_\\:claimSection > .page-section > .sm-datatable > tbody > tr:nth-child(3) > td:nth-child(1) > a > .calbox > .calbox-month > span"]
+  u) ["#ns_Z7_QB0003002GB790ASJIA2V910S7_\\:claimSection > .page-section > .sm-datatable > tbody > tr:nth-child(3) > td:nth-child(1) > a > .calbox > .calbox-month > span"]
     Fix any of the following:
       Element has insufficient color contrast of 3.02 (foreground color: #ffffff, background color: #3399ee, font size: 8.3pt, font weight: bold). Expected contrast ratio of 4.5:1
 
 
-  w) ["#ns_Z7_QB0003002GB790ASJIA2V910S7_\\:claimSection > .page-section > .sm-datatable > tbody > tr:nth-child(3) > td:nth-child(1) > a > .calbox > .calbox-day"]
+  v) ["#ns_Z7_QB0003002GB790ASJIA2V910S7_\\:claimSection > .page-section > .sm-datatable > tbody > tr:nth-child(3) > td:nth-child(1) > a > .calbox > .calbox-day"]
     Fix any of the following:
       Element has insufficient color contrast of 2.72 (foreground color: #2288dd, background color: #ccddff, font size: 12.0pt, font weight: bold). Expected contrast ratio of 4.5:1
 
 
-  x) ["#ns_Z7_QB0003002GB790ASJIA2V910S7_\\:claimSection > .page-section > .sm-datatable > tbody > tr:nth-child(4) > td:nth-child(1) > a > .calbox > .calbox-month"]
+  w) ["#ns_Z7_QB0003002GB790ASJIA2V910S7_\\:claimSection > .page-section > .sm-datatable > tbody > tr:nth-child(4) > td:nth-child(1) > a > .calbox > .calbox-month"]
     Fix any of the following:
       Element has insufficient color contrast of 3.02 (foreground color: #ffffff, background color: #3399ee, font size: 8.3pt, font weight: bold). Expected contrast ratio of 4.5:1
 
 
-  y) ["#ns_Z7_QB0003002GB790ASJIA2V910S7_\\:claimSection > .page-section > .sm-datatable > tbody > tr:nth-child(4) > td:nth-child(1) > a > .calbox > .calbox-month > span"]
+  x) ["#ns_Z7_QB0003002GB790ASJIA2V910S7_\\:claimSection > .page-section > .sm-datatable > tbody > tr:nth-child(4) > td:nth-child(1) > a > .calbox > .calbox-month > span"]
     Fix any of the following:
       Element has insufficient color contrast of 3.02 (foreground color: #ffffff, background color: #3399ee, font size: 8.3pt, font weight: bold). Expected contrast ratio of 4.5:1
 
 
-  z) ["#ns_Z7_QB0003002GB790ASJIA2V910S7_\\:claimSection > .page-section > .sm-datatable > tbody > tr:nth-child(4) > td:nth-child(1) > a > .calbox > .calbox-day"]
+  y) ["#ns_Z7_QB0003002GB790ASJIA2V910S7_\\:claimSection > .page-section > .sm-datatable > tbody > tr:nth-child(4) > td:nth-child(1) > a > .calbox > .calbox-day"]
     Fix any of the following:
       Element has insufficient color contrast of 2.72 (foreground color: #2288dd, background color: #ccddff, font size: 12.0pt, font weight: bold). Expected contrast ratio of 4.5:1
 
@@ -305,57 +300,52 @@
       Element has insufficient color contrast of 2.72 (foreground color: #2288dd, background color: #ccddff, font size: 12.0pt, font weight: bold). Expected contrast ratio of 4.5:1
 
 
-  p) ["#ns_Z7_QB0003002GB790ASJIA2V91025_dentalTitle > .title"]
+  p) [".dental_claims > .title"]
     Fix any of the following:
       Element has insufficient color contrast of 3.02 (foreground color: #3399ee, background color: #ffffff, font size: 10.5pt, font weight: bold). Expected contrast ratio of 4.5:1
 
 
-  q) [".dental_claims > .title"]
-    Fix any of the following:
-      Element has insufficient color contrast of 3.02 (foreground color: #3399ee, background color: #ffffff, font size: 10.5pt, font weight: bold). Expected contrast ratio of 4.5:1
-
-
-  r) ["#ns_Z7_QB0003002GB790ASJIA2V910S7_\\:claimSection > .page-section > .sm-datatable > tbody > tr:nth-child(2) > td:nth-child(1) > a > .calbox > .calbox-month"]
+  q) ["#ns_Z7_QB0003002GB790ASJIA2V910S7_\\:claimSection > .page-section > .sm-datatable > tbody > tr:nth-child(2) > td:nth-child(1) > a > .calbox > .calbox-month"]
     Fix any of the following:
       Element has insufficient color contrast of 3.02 (foreground color: #ffffff, background color: #3399ee, font size: 8.3pt, font weight: bold). Expected contrast ratio of 4.5:1
 
 
-  s) ["#ns_Z7_QB0003002GB790ASJIA2V910S7_\\:claimSection > .page-section > .sm-datatable > tbody > tr:nth-child(2) > td:nth-child(1) > a > .calbox > .calbox-month > span"]
+  r) ["#ns_Z7_QB0003002GB790ASJIA2V910S7_\\:claimSection > .page-section > .sm-datatable > tbody > tr:nth-child(2) > td:nth-child(1) > a > .calbox > .calbox-month > span"]
     Fix any of the following:
       Element has insufficient color contrast of 3.02 (foreground color: #ffffff, background color: #3399ee, font size: 8.3pt, font weight: bold). Expected contrast ratio of 4.5:1
 
 
-  t) ["#ns_Z7_QB0003002GB790ASJIA2V910S7_\\:claimSection > .page-section > .sm-datatable > tbody > tr:nth-child(2) > td:nth-child(1) > a > .calbox > .calbox-day"]
+  s) ["#ns_Z7_QB0003002GB790ASJIA2V910S7_\\:claimSection > .page-section > .sm-datatable > tbody > tr:nth-child(2) > td:nth-child(1) > a > .calbox > .calbox-day"]
     Fix any of the following:
       Element has insufficient color contrast of 2.72 (foreground color: #2288dd, background color: #ccddff, font size: 12.0pt, font weight: bold). Expected contrast ratio of 4.5:1
 
 
-  u) ["#ns_Z7_QB0003002GB790ASJIA2V910S7_\\:claimSection > .page-section > .sm-datatable > tbody > tr:nth-child(3) > td:nth-child(1) > a > .calbox > .calbox-month"]
+  t) ["#ns_Z7_QB0003002GB790ASJIA2V910S7_\\:claimSection > .page-section > .sm-datatable > tbody > tr:nth-child(3) > td:nth-child(1) > a > .calbox > .calbox-month"]
     Fix any of the following:
       Element has insufficient color contrast of 3.02 (foreground color: #ffffff, background color: #3399ee, font size: 8.3pt, font weight: bold). Expected contrast ratio of 4.5:1
 
 
-  v) ["#ns_Z7_QB0003002GB790ASJIA2V910S7_\\:claimSection > .page-section > .sm-datatable > tbody > tr:nth-child(3) > td:nth-child(1) > a > .calbox > .calbox-month > span"]
+  u) ["#ns_Z7_QB0003002GB790ASJIA2V910S7_\\:claimSection > .page-section > .sm-datatable > tbody > tr:nth-child(3) > td:nth-child(1) > a > .calbox > .calbox-month > span"]
     Fix any of the following:
       Element has insufficient color contrast of 3.02 (foreground color: #ffffff, background color: #3399ee, font size: 8.3pt, font weight: bold). Expected contrast ratio of 4.5:1
 
 
-  w) ["#ns_Z7_QB0003002GB790ASJIA2V910S7_\\:claimSection > .page-section > .sm-datatable > tbody > tr:nth-child(3) > td:nth-child(1) > a > .calbox > .calbox-day"]
+  v) ["#ns_Z7_QB0003002GB790ASJIA2V910S7_\\:claimSection > .page-section > .sm-datatable > tbody > tr:nth-child(3) > td:nth-child(1) > a > .calbox > .calbox-day"]
     Fix any of the following:
       Element has insufficient color contrast of 2.72 (foreground color: #2288dd, background color: #ccddff, font size: 12.0pt, font weight: bold). Expected contrast ratio of 4.5:1
 
 
-  x) ["#ns_Z7_QB0003002GB790ASJIA2V910S7_\\:claimSection > .page-section > .sm-datatable > tbody > tr:nth-child(4) > td:nth-child(1) > a > .calbox > .calbox-month"]
+  w) ["#ns_Z7_QB0003002GB790ASJIA2V910S7_\\:claimSection > .page-section > .sm-datatable > tbody > tr:nth-child(4) > td:nth-child(1) > a > .calbox > .calbox-month"]
     Fix any of the following:
       Element has insufficient color contrast of 3.02 (foreground color: #ffffff, background color: #3399ee, font size: 8.3pt, font weight: bold). Expected contrast ratio of 4.5:1
 
 
-  y) ["#ns_Z7_QB0003002GB790ASJIA2V910S7_\\:claimSection > .page-section > .sm-datatable > tbody > tr:nth-child(4) > td:nth-child(1) > a > .calbox > .calbox-month > span"]
+  x) ["#ns_Z7_QB0003002GB790ASJIA2V910S7_\\:claimSection > .page-section > .sm-datatable > tbody > tr:nth-child(4) > td:nth-child(1) > a > .calbox > .calbox-month > span"]
     Fix any of the following:
       Element has insufficient color contrast of 3.02 (foreground color: #ffffff, background color: #3399ee, font size: 8.3pt, font weight: bold). Expected contrast ratio of 4.5:1
 
 
-  z) ["#ns_Z7_QB0003002GB790ASJIA2V910S7_\\:claimSection > .page-section > .sm-datatable > tbody > tr:nth-child(4) > td:nth-child(1) > a > .calbox > .calbox-day"]
+  y) ["#ns_Z7_QB0003002GB790ASJIA2V910S7_\\:claimSection > .page-section > .sm-datatable > tbody > tr:nth-child(4) > td:nth-child(1) > a > .calbox > .calbox-day"]
     Fix any of the following:
       Element has insufficient color contrast of 2.72 (foreground color: #2288dd, background color: #ccddff, font size: 12.0pt, font weight: bold). Expected contrast ratio of 4.5:1
 
@@ -429,7 +419,7 @@ at ✽.I see accessibility report(file:///C:/Users/Sarkerm.rashid/IdeaProjects/a
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.perficient.accessibilitytest.runnertest.RunnerTest@7393222f]" started-at="2023-02-24T08:16:55 CST" name="tearDownClass" finished-at="2023-02-24T08:16:55 CST" duration-ms="287" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.perficient.accessibilitytest.runnertest.RunnerTest@7393222f]" started-at="2023-02-24T16:25:09 CST" name="tearDownClass" finished-at="2023-02-24T16:25:09 CST" duration-ms="342" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

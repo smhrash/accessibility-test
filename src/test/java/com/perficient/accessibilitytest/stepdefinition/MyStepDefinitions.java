@@ -21,8 +21,8 @@ public class MyStepDefinitions extends AbstractServiceTest {
         System.out.println("I am in login page");
     }
 
-    @When("I enter my {string} and {string}")
-    public void i_enter_my_and(String userName, String userPassword) {
+    @When("I enter my username: {string} and password: {string}")
+    public void i_enter_my_username_and_password(String userName, String userPassword) {
         getInItElement();
         myHealthToolkit.enterUserCredentials(userName, userPassword);
     }

@@ -6,7 +6,7 @@ Feature: Demo Testing
   Scenario Outline: Accessibility report
 
     Given I navigate to my health toolkit page
-    When I enter my "<Username>" and "<Password>"
+    When I enter my username: "<Username>" and password: "<Password>"
     And I click on login button
     Then I see accessibility report
     Examples:
